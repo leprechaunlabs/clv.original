@@ -1,2 +1,32 @@
 # WebStorm Settings
 .idea
+
+# System Settings
+**.DS_Store
+
+# Default Directory Structure File Exclusions
+Objects/*
+AccountConfiguration/*
+FileCabinet/Templates/*
+FileCabinet/Web Site Hosting Files/*
+
+# Maintains Default SDF Directory Structure
+!**/.keep
+#!FileCabinet/SuiteScripts/**/.keep
+
+# Cloverfield v2 Source Directory Configuration
+FileCabinet/SuiteScripts/*
+#FileCabinet/SuiteScripts/**/
+!FileCabinet/SuiteScripts/**/cloverfield/
+FileCabinet/SuiteScripts/**/cloverfield/*
+!FileCabinet/SuiteScripts/**/cloverfield/config.json
+!FileCabinet/SuiteScripts/**/cloverfield/**/src
+
+# Retains SDF Folder Attributes and Excludes Current File Attributes
+FileCabinet/SuiteScripts/**/cloverfield/**/src/**/.attributes/*
+!FileCabinet/SuiteScripts/**/cloverfield/**/src/**/.attributes/.folder.attr.xml
+!FileCabinet/SuiteScripts/**/cloverfield/**/.attributes/.folder.attr.xml
+
+# Ignores Cloverfield v1 Scripts (includes script with a typo in prefix name)
+FileCabinet/SuiteScripts/**/cloverfield/**/src/**/cloverfied.*
+FileCabinet/SuiteScripts/**/cloverfield/**/src/**/cloverfield.*
