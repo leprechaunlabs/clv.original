@@ -1,0 +1,9 @@
+{
+  "baseUrl" : "/SuiteScripts/cloverfield/src/lib",
+  "paths" : {
+    "CLV/services/runscope" : "services/runscope",
+    "CLV/helpers/email" : "helpers/email",
+    "CLV/helpers/filesystem" : "helpers/filesystem",
+    "CLV/data/states" : "data/states"
+  }
+}
